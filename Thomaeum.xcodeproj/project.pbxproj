@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5920BDA7273998FE00AA4AED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA6273998FE00AA4AED /* Home.swift */; };
+		5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA82739990600AA4AED /* ThomsLine.swift */; };
+		5920BDAB2739990C00AA4AED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAA2739990C00AA4AED /* Settings.swift */; };
+		5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* Substitute.swift */; };
 		59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */; };
 		59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E192738687D00A9B7B4 /* ContentView.swift */; };
 		59C31E1C2738687D00A9B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1B2738687D00A9B7B4 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5920BDA6273998FE00AA4AED /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5920BDA82739990600AA4AED /* ThomsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLine.swift; sourceTree = "<group>"; };
+		5920BDAA2739990C00AA4AED /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5920BDAC2739992E00AA4AED /* Substitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substitute.swift; sourceTree = "<group>"; };
 		59C31E142738687D00A9B7B4 /* Thomaeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thomaeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumApp.swift; sourceTree = "<group>"; };
 		59C31E192738687D00A9B7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			children = (
 				59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */,
 				59C31E192738687D00A9B7B4 /* ContentView.swift */,
+				5920BDA6273998FE00AA4AED /* Home.swift */,
+				5920BDA82739990600AA4AED /* ThomsLine.swift */,
+				5920BDAA2739990C00AA4AED /* Settings.swift */,
+				5920BDAC2739992E00AA4AED /* Substitute.swift */,
 				59C31E1B2738687D00A9B7B4 /* Assets.xcassets */,
 				59C31E1D2738687D00A9B7B4 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */,
+				5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */,
+				5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */,
+				5920BDA7273998FE00AA4AED /* Home.swift in Sources */,
 				59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */,
+				5920BDAB2739990C00AA4AED /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
