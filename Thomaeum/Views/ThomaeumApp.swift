@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct ThomaeumApp: App {
-    @StateObject var modelData = ModelData()
+    @StateObject var newsData = NewsData()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(modelData)
+                .environmentObject(newsData)
+                .navigationViewStyle(.stack)
         }
     }
 }

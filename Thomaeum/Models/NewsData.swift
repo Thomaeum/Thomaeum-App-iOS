@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class ModelData: ObservableObject {
+final class NewsData: ObservableObject {
     
     @Published var articles: [ArticleService]?
     private var articlesLoaded: Int = 0
@@ -19,7 +19,7 @@ final class ModelData: ObservableObject {
     @Published var testomate: Int = 0
     
     func loadFirstPreview() {
-        let urlString = "https://thoms-line.thomaeum.de/wp-json/wp/v2/posts?_fields=id,date,title.rendered,excerpt.rendered"
+        let urlString = "https://thoms-line.thomaeum.de/wp-json/wp/v2/posts?_fields=id,date,title.rendered,excerpt.rendered,content.rendered,_links.wp:featuredmedia,_links.author&_embed"
         let url = URL(string: urlString)
         
         guard let url = url else {
@@ -30,10 +30,9 @@ final class ModelData: ObservableObject {
         print("before")
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            print("task cclosure")
+            print("task cclsure")
             if let data = data {
                 print("data")
-                //self.articlesLoaded += 10
                 let decoder = JSONDecoder()
                 do {
                     print("do")
@@ -42,7 +41,7 @@ final class ModelData: ObservableObject {
                         self.articles = articles
                     }
                 } catch {
-                    print("erro while decoding")
+                    print("error: \(error)")
                 }
             }
         }
@@ -52,14 +51,6 @@ final class ModelData: ObservableObject {
         print("after")
         
     }
-    
-    /*do {
-        let decoder = JSONDecoder()
-        articlesLoaded += 10
-        return try decoder.decode([article].self, from: data)
-    } catch {
-        fatalError("Couldn't parse json as article structure.")
-    }*/
     
     func loadMorePreview() {
         

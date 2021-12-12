@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
     @State private var showingSettings = false
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var newsData: NewsData
     
     var body: some View {
         NavigationView {
@@ -33,15 +33,15 @@ struct Home: View {
                         Text("Debug/Test sectoin")
                             .font(.title2)
                         Divider()
-                        Text(String(modelData.testomate))
-                        if modelData.articles != nil {
-                            Text(String(modelData.articles![0].id))
-                            Text(String(modelData.articles!.count))
+                        Text(String(newsData.testomate))
+                        if newsData.articles != nil {
+                            Text(String(newsData.articles![0].id))
+                            Text(String(newsData.articles!.count))
                         }
-                        Text(String(modelData.testomate))
+                        Text(String(newsData.testomate))
                             .onAppear {
-                                modelData.testomate += 1
-                                modelData.loadFirstPreview()
+                                newsData.testomate += 1
+                                newsData.loadFirstPreview()
                             }
                     }
                 }
