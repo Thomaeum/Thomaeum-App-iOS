@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct ThomsLine: View {
+    @EnvironmentObject var modelData: ModelData
+    
     @State private var showingFilter = false
     
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack {
-                    Text("Here, article boxes are to be displayed")
+                if modelData.articles != nil {
+                    VStack(spacing: 20) {
+                        ForEach(modelData.articles!) { article in
+                            Card(article: article)
+                        }
+                    }
+                    .frame(
+                        maxWidth: .infinity
+                    )
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                } else {
+                    Text("No articles available yet.")
                 }
             }
             .navigationTitle("ThomsLine")

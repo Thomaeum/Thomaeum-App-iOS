@@ -11,10 +11,15 @@
 		5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA82739990600AA4AED /* ThomsLine.swift */; };
 		5920BDAB2739990C00AA4AED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAA2739990C00AA4AED /* Settings.swift */; };
 		5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* Substitute.swift */; };
+		593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593EC83E2760FAEC0040F8A6 /* CaTho.swift */; };
+		599771C02764BC9100C88E32 /* articleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771BF2764BC9100C88E32 /* articleService.swift */; };
+		599771C22766052F00C88E32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C12766052F00C88E32 /* Card.swift */; };
 		59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */; };
 		59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E192738687D00A9B7B4 /* ContentView.swift */; };
 		59C31E1C2738687D00A9B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1B2738687D00A9B7B4 /* Assets.xcassets */; };
 		59C31E1F2738687D00A9B7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1E2738687D00A9B7B4 /* Preview Assets.xcassets */; };
+		59CF2A25273D9AA000CA40D4 /* article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF2A24273D9AA000CA40D4 /* article.swift */; };
+		59CF2A27273DA26400CA40D4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF2A26273DA26400CA40D4 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +27,16 @@
 		5920BDA82739990600AA4AED /* ThomsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLine.swift; sourceTree = "<group>"; };
 		5920BDAA2739990C00AA4AED /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5920BDAC2739992E00AA4AED /* Substitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substitute.swift; sourceTree = "<group>"; };
+		593EC83E2760FAEC0040F8A6 /* CaTho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTho.swift; sourceTree = "<group>"; };
+		599771BF2764BC9100C88E32 /* articleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articleService.swift; sourceTree = "<group>"; };
+		599771C12766052F00C88E32 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		59C31E142738687D00A9B7B4 /* Thomaeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thomaeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumApp.swift; sourceTree = "<group>"; };
 		59C31E192738687D00A9B7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59C31E1B2738687D00A9B7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59C31E1E2738687D00A9B7B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59CF2A24273D9AA000CA40D4 /* article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = article.swift; sourceTree = "<group>"; };
+		59CF2A26273DA26400CA40D4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593EC83D2760F39D0040F8A6 /* CaTho */ = {
+			isa = PBXGroup;
+			children = (
+				593EC83E2760FAEC0040F8A6 /* CaTho.swift */,
+			);
+			path = CaTho;
+			sourceTree = "<group>";
+		};
 		59C31E0B2738687D00A9B7B4 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +77,8 @@
 		59C31E162738687D00A9B7B4 /* Thomaeum */ = {
 			isa = PBXGroup;
 			children = (
-				59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */,
-				59C31E192738687D00A9B7B4 /* ContentView.swift */,
-				5920BDA6273998FE00AA4AED /* Home.swift */,
-				5920BDA82739990600AA4AED /* ThomsLine.swift */,
-				5920BDAA2739990C00AA4AED /* Settings.swift */,
-				5920BDAC2739992E00AA4AED /* Substitute.swift */,
+				59CF2A1E273D99FD00CA40D4 /* Views */,
+				59CF2A1F273D9A0300CA40D4 /* Models */,
 				59C31E1B2738687D00A9B7B4 /* Assets.xcassets */,
 				59C31E1D2738687D00A9B7B4 /* Preview Content */,
 			);
@@ -77,6 +91,63 @@
 				59C31E1E2738687D00A9B7B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59CF2A1E273D99FD00CA40D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				593EC83D2760F39D0040F8A6 /* CaTho */,
+				59CF2A22273D9A2A00CA40D4 /* Substitute */,
+				59CF2A21273D9A2000CA40D4 /* ThomsLine */,
+				59CF2A20273D9A1D00CA40D4 /* Home */,
+				59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */,
+				59C31E192738687D00A9B7B4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59CF2A1F273D9A0300CA40D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59CF2A23273D9A9600CA40D4 /* Article */,
+				59CF2A26273DA26400CA40D4 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59CF2A20273D9A1D00CA40D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5920BDA6273998FE00AA4AED /* Home.swift */,
+				5920BDAA2739990C00AA4AED /* Settings.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		59CF2A21273D9A2000CA40D4 /* ThomsLine */ = {
+			isa = PBXGroup;
+			children = (
+				5920BDA82739990600AA4AED /* ThomsLine.swift */,
+				599771C12766052F00C88E32 /* Card.swift */,
+			);
+			path = ThomsLine;
+			sourceTree = "<group>";
+		};
+		59CF2A22273D9A2A00CA40D4 /* Substitute */ = {
+			isa = PBXGroup;
+			children = (
+				5920BDAC2739992E00AA4AED /* Substitute.swift */,
+			);
+			path = Substitute;
+			sourceTree = "<group>";
+		};
+		59CF2A23273D9A9600CA40D4 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				59CF2A24273D9AA000CA40D4 /* article.swift */,
+				599771BF2764BC9100C88E32 /* articleService.swift */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599771C02764BC9100C88E32 /* articleService.swift in Sources */,
 				59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */,
+				59CF2A25273D9AA000CA40D4 /* article.swift in Sources */,
 				5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */,
+				599771C22766052F00C88E32 /* Card.swift in Sources */,
 				5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */,
 				5920BDA7273998FE00AA4AED /* Home.swift in Sources */,
+				59CF2A27273DA26400CA40D4 /* ModelData.swift in Sources */,
 				59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */,
 				5920BDAB2739990C00AA4AED /* Settings.swift in Sources */,
+				593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +361,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thomaeum/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KRKDFXFPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,13 +390,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thomaeum/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KRKDFXFPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

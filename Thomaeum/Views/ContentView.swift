@@ -16,16 +16,22 @@ struct ContentView: View {
                     Text("Home")
                 }
             
+            Substitute()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Vertretung")
+                }
+            
             ThomsLine()
                 .tabItem {
                     Image(systemName: "newspaper.fill")
                     Text("ThomsLine")
                 }
             
-            Substitute()
+            CaTho()
                 .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Vertretung")
+                    Image(systemName: "cup.and.saucer.fill")
+                    Text("CaTho")
                 }
         }
     }
