@@ -12,6 +12,7 @@ struct ArticleService: Codable, Identifiable {
     var date: String
     var title: Title
     var content: Content?
+    var link: String
     var excerpt: Excerpt
     var embedded: Embedded
     
@@ -20,6 +21,7 @@ struct ArticleService: Codable, Identifiable {
         case date
         case title
         case content
+        case link
         case excerpt
         case embedded = "_embedded"
     }
@@ -54,75 +56,3 @@ struct ArticleService: Codable, Identifiable {
         }
     }
 }
-
-
-/*struct ArticleService: Codable, Identifiable {
-    var id: Int
-    var date: String
-    var title: Title
-    var content: Content
-    var excerpt: Excerpt
-    var _links: Links
-    var _embedded: Embedded
-    
-    struct Title: Codable {
-        var rendered: String
-    }
-    
-    struct Excerpt: Codable {
-        var rendered: String
-    }
-    
-    struct Content: Codable {
-        var rendered: String
-    }
-    
-    struct Links: Codable {
-        
-        var self: [Link]
-        var collection: [Link]
-        var about: [Link]
-        var author: [Link]
-        var replies: [Link]
-        var version-history: [Link]
-        var predecessor-version: [Link]
-        ver wp:featuredmedia: [Link]
-        var wp:attachment: [Link]
-        var wp:term: [Link]
-        var curies: [Link]
-        
-        struct Link: Codable {
-            var href: String
-            var embeddable: Bool
-            var count: Int
-            var id: Int
-            var taxonomy: String
-            var name: String
-            var templated: Bool
-        }
-        
-    }
-    
-    struct Embedded: Codable {
-        
-        var author: [Author]
-        
-        struct Author: Codable {
-            
-            var id: Int
-            var name: String
-            var url: String
-            var description: String
-            var link: String
-            var slug: String
-            
-            
-        }
-        
-        struct wp:featuredmedia: Codable {
-            
-        }
-        
-    }
-}
-*/

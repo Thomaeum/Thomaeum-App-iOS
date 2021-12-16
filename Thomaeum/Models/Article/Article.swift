@@ -7,40 +7,60 @@
 
 import Foundation
 import SwiftUI
+import SwiftSoup
 
-struct Article: Codable, Identifiable {
+struct Article: Identifiable {
     var id: Int
     var date: String
-    //var title: String
-    //var excerpt: String
+    var title: String
+    var excerpt: String
+    var content: [Element]?
+    var contentUrl: URL
+    var author: String
+    var imageUrl: String
     
-    //private var authors: [author]
-    /*var author: String /*{
-        authors[0].name
-    }*/*/
+    var someError: Bool = false
     
-    //private var featuredMediaURL: String
-    /*var featuredMedia: Image {
-        Image(featuredMediaURL)
-    }*/
-    
-    //var content: String? = nil
-    //var link: String? = nil
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case date
-        //case title = "title.rendered"
+    init(from service: ArticleService) {
+        self.id = service.id
         
-        //case excerpt = "excerpt.rendered"
-        //case author = "_embedded.author[0].name"
-        //case featuredMediaURL = "_embedded.wp:featuredmedia[0].source_url"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.locale = Locale(identifier: "de_DE")
+        let date = dateFormatter.date(from: service.date)
+        if let date = date {
+            self.date = dateFormatter.string(from: date)
+        } else {
+            self.date = ""
+            self.someError = true
+        }
         
-        /*case link = "link"
-        case content = "content.rendered"*/
+        do {
+            self.title = try SwiftSoup.parse(service.title.rendered).text()
+        } catch {
+            self.title = ""
+            self.someError = true
+        }
+        
+        do {
+            self.excerpt = try SwiftSoup.parse(service.excerpt.rendered).text()
+        } catch {
+            self.excerpt = ""
+            self.someError = true
+        }
+        
+        self.author = service.embedded.author[0].name
+        
+        self.imageUrl = service.embedded.featuredMedia[0].source_url
+        
+        self.contentUrl = URL(string: service.link)!
     }
+    
+    mutating func setContentFromHTML(_ html: String) {
+        do {
+            let elementsArray: [Element]? = try SwiftSoup.parseBodyFragment(html).body()?.children().array()
+            self.content = elementsArray!
+        } catch {}
+    }
+    
 }
-
-/*struct author: Codable, Hashable {
-    var name: String
-}*/

@@ -41,7 +41,7 @@ struct Home: View {
                         Text(String(newsData.testomate))
                             .onAppear {
                                 newsData.testomate += 1
-                                newsData.loadFirstPreview()
+                                newsData.loadTenMoreArticles()
                             }
                     }
                 }

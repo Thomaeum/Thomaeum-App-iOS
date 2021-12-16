@@ -12,11 +12,11 @@
 		5920BDAB2739990C00AA4AED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAA2739990C00AA4AED /* Settings.swift */; };
 		5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* Substitute.swift */; };
 		593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593EC83E2760FAEC0040F8A6 /* CaTho.swift */; };
+		59903B65276919A5003EB2EC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 59903B64276919A5003EB2EC /* SwiftSoup */; };
 		599771C02764BC9100C88E32 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771BF2764BC9100C88E32 /* ArticleService.swift */; };
 		599771C22766052F00C88E32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C12766052F00C88E32 /* Card.swift */; };
-		599771C427667BB100C88E32 /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C327667BB100C88E32 /* Website.swift */; };
 		599771C927667BF100C88E32 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C827667BF100C88E32 /* ArticleView.swift */; };
-		599771CB27667C0200C88E32 /* SmallCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771CA27667C0200C88E32 /* SmallCard.swift */; };
+		599A7A552767B7B4003223A1 /* External.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599A7A542767B7B4003223A1 /* External.swift */; };
 		59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */; };
 		59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E192738687D00A9B7B4 /* ContentView.swift */; };
 		59C31E1C2738687D00A9B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1B2738687D00A9B7B4 /* Assets.xcassets */; };
@@ -33,9 +33,8 @@
 		593EC83E2760FAEC0040F8A6 /* CaTho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTho.swift; sourceTree = "<group>"; };
 		599771BF2764BC9100C88E32 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		599771C12766052F00C88E32 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		599771C327667BB100C88E32 /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		599771C827667BF100C88E32 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
-		599771CA27667C0200C88E32 /* SmallCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCard.swift; sourceTree = "<group>"; };
+		599A7A542767B7B4003223A1 /* External.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = External.swift; sourceTree = "<group>"; };
 		59C31E142738687D00A9B7B4 /* Thomaeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thomaeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumApp.swift; sourceTree = "<group>"; };
 		59C31E192738687D00A9B7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59903B65276919A5003EB2EC /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,14 @@
 			children = (
 				599771C12766052F00C88E32 /* Card.swift */,
 				599771C827667BF100C88E32 /* ArticleView.swift */,
-				599771CA27667C0200C88E32 /* SmallCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		599A7A532767B7A5003223A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				599A7A542767B7B4003223A1 /* External.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 		59CF2A1E273D99FD00CA40D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				599A7A532767B7A5003223A1 /* Views */,
 				593EC83D2760F39D0040F8A6 /* CaTho */,
 				59CF2A22273D9A2A00CA40D4 /* Substitute */,
 				59CF2A21273D9A2000CA40D4 /* news */,
@@ -145,7 +153,6 @@
 			children = (
 				599771C527667BB700C88E32 /* Views */,
 				5920BDA82739990600AA4AED /* ThomsLine.swift */,
-				599771C327667BB100C88E32 /* Website.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -183,6 +190,9 @@
 			dependencies = (
 			);
 			name = Thomaeum;
+			packageProductDependencies = (
+				59903B64276919A5003EB2EC /* SwiftSoup */,
+			);
 			productName = Thomaeum;
 			productReference = 59C31E142738687D00A9B7B4 /* Thomaeum.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 59C31E0B2738687D00A9B7B4;
+			packageReferences = (
+				59903B63276919A5003EB2EC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 59C31E152738687D00A9B7B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,15 +255,14 @@
 				59CF2A25273D9AA000CA40D4 /* Article.swift in Sources */,
 				5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */,
 				599771C22766052F00C88E32 /* Card.swift in Sources */,
+				599A7A552767B7B4003223A1 /* External.swift in Sources */,
 				5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */,
 				5920BDA7273998FE00AA4AED /* Home.swift in Sources */,
-				599771CB27667C0200C88E32 /* SmallCard.swift in Sources */,
 				59CF2A27273DA26400CA40D4 /* NewsData.swift in Sources */,
 				59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */,
 				5920BDAB2739990C00AA4AED /* Settings.swift in Sources */,
 				593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */,
 				599771C927667BF100C88E32 /* ArticleView.swift in Sources */,
-				599771C427667BB100C88E32 /* Website.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +465,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59903B63276919A5003EB2EC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59903B64276919A5003EB2EC /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59903B63276919A5003EB2EC /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59C31E0C2738687D00A9B7B4 /* Project object */;
 }

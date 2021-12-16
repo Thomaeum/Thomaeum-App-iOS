@@ -8,32 +8,34 @@
 import SwiftUI
 
 struct Card: View {
-    var article: ArticleService
+    var article: Article
     
     var body: some View {
         VStack(alignment: .leading) {
-            ZStack {
-                Image(systemName: "camera")
-                    .frame(
-                        maxWidth: .infinity
-                    )
+            AsyncImage(url: URL(string: article.imageUrl)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 200)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .clipped()
+                    .cornerRadius(7)
+            } placeholder: {
+                ProgressView()
+                    .frame(height: 200)
             }
-                .frame(
-                    height: 120
-                )
+            Text(article.title)
+                .font(.title)
             HStack {
-                Text("\(article.embedded.author[0].name),")
+                Text("\(article.author),")
                 Text(article.date)
             }
                 .font(.caption)
-            Text(article.title.rendered)
-                .font(.title)
-            Text(article.excerpt.rendered)
+            Text(article.excerpt)
                 .font(.body)
         }
         .multilineTextAlignment(.leading)
         .foregroundColor(.primary)
-        .background(Color.red)
     }
 }
 

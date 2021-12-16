@@ -11,43 +11,31 @@ struct ThomsLine: View {
     @EnvironmentObject var newsData: NewsData
     
     @State private var showingFilter = false
+    @State private var showSafari: Bool = false
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                if newsData.articles != nil {
-                    LazyVStack(spacing: 50) {
-                        ForEach(newsData.articles!) { article in
-                            NavigationLink(
-                                destination: {
-                                    ArticleView(article: article)
-                                }, label: {
-                                    Card(article: article)
-                                }
-                            )
-                        }
+            if newsData.articles != nil {
+                List(newsData.articles!) { article in
+                    NavigationLink {
+                        ArticleView(article: article)
+                            .onAppear {
+                                newsData.loadCompleteArticleByID(article.id)
+                            }
+                    } label: {
+                        Card(article: article)
                     }
-                    .frame(
-                        maxWidth: .infinity
-                    )
-                    .padding(.leading, 10)
-                    .padding(.trailing, 10)
-                } else {
-                    Text("No articles available yet.")
                 }
-            }
-            .navigationTitle("ThomsLine")
-            /*.toolbar {
-                Button {
-                    showingFilter.toggle()
-                } label: {
-                    Label("Filter", systemImage: "line.3.horizontal.decrease.circle")
+                .padding(.horizontal, 20)
+                .listStyle(.plain)
+                .refreshable {
+                    newsData.reloadArticles()
                 }
+                .navigationTitle("ThomsLine")
+            } else {
+                ProgressView()
+                    .navigationTitle("ThomsLine")
             }
-            .sheet(isPresented: $showingFilter) {
-                Text("show filter settingsfor articles")
-            }*/
-
         }
     }
 }

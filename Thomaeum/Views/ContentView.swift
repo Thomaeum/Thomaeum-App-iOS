@@ -27,12 +27,6 @@ struct ContentView: View {
                     Image(systemName: "newspaper.fill")
                     Text("ThomsLine")
                 }
-            
-            CaTho()
-                .tabItem {
-                    Image(systemName: "cup.and.saucer.fill")
-                    Text("CaTho")
-                }
         }
     }
 }

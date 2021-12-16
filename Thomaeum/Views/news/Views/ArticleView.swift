@@ -6,24 +6,48 @@
 //
 
 import SwiftUI
+import WebKit
+import SwiftSoup
 
 struct ArticleView: View {
-    var article: ArticleService
+    var article: Article
     
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("\(article.embedded.author[0].name),")
-                    Text(article.date)
+        if let content = article.content {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text(article.title)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    HStack {
+                        Text("\(article.author),")
+                        Text(article.date)
+                    }
+                        .font(.caption)
+                    Divider()
+                    VStack(alignment: .leading) {
+                        ForEach(content, id: \.self) { element in
+                            viewFromElement(element)
+                        }
+                    }
                 }
-                    .font(.caption)
-                Divider()
-                Text(article.content!.rendered)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .padding()
+        } else {
+            ProgressView()
         }
-        .navigationTitle(article.title.rendered)
+    }
+    
+    func viewFromElement(_ element: Element) -> some View {
+        if element.tagName() == "p" {
+            do {
+                return Text(try element.text())
+            } catch {}
+        }
+        return Text("")
     }
 }
 
