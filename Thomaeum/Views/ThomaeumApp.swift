@@ -9,12 +9,20 @@ import SwiftUI
 
 @main
 struct ThomaeumApp: App {
-    @StateObject var newsData = NewsData()
+    @StateObject var thomsLineData = ThomsLineData()
+    @StateObject var thomaeumNewsData = ThomaeumNewsData()
+    @StateObject var substitutionData = SubstitutionData()
+    
+    init() {
+        
+    }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(newsData)
+                .environmentObject(thomsLineData)
+                .environmentObject(substitutionData)
+                .environmentObject(thomaeumNewsData)
                 .navigationViewStyle(.stack)
         }
     }

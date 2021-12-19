@@ -11,7 +11,7 @@ import SwiftSoup
 
 struct Article: Identifiable {
     var id: Int
-    var date: String
+    var date: Date
     var title: String
     var excerpt: String
     var content: [Element]?
@@ -20,20 +20,17 @@ struct Article: Identifiable {
     var imageUrl: String
     
     var someError: Bool = false
+    let outlet: String
     
-    init(from service: ArticleService) {
+    init(from service: ArticleService, outlet: String) {
+        self.outlet = outlet
+        
         self.id = service.id
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        dateFormatter.locale = Locale(identifier: "de_DE")
-        let date = dateFormatter.date(from: service.date)
-        if let date = date {
-            self.date = dateFormatter.string(from: date)
-        } else {
-            self.date = ""
-            self.someError = true
-        }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        formatter.locale = Locale(identifier: "de_DE")
+        self.date = formatter.date(from: service.date)!
         
         do {
             self.title = try SwiftSoup.parse(service.title.rendered).text()
@@ -61,6 +58,13 @@ struct Article: Identifiable {
             let elementsArray: [Element]? = try SwiftSoup.parseBodyFragment(html).body()?.children().array()
             self.content = elementsArray!
         } catch {}
+    }
+    
+    func dateToString() -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "de_DE")
+        formatter.dateStyle = .long
+        return formatter.string(from: self.date)
     }
     
 }

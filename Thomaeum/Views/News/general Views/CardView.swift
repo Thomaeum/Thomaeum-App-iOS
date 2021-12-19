@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Card: View {
+struct CardView: View {
     var article: Article
     
     var body: some View {
@@ -26,10 +26,7 @@ struct Card: View {
             }
             Text(article.title)
                 .font(.title)
-            HStack {
-                Text("\(article.author),")
-                Text(article.date)
-            }
+            Text(String(article.author)+", "+article.dateToString())
                 .font(.caption)
             Text(article.excerpt)
                 .font(.body)

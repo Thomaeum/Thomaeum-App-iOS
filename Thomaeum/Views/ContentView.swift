@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var thomsLineData: ThomsLineData
+    @EnvironmentObject var thomaeumNewsData: ThomaeumNewsData
+    
     var body: some View {
         TabView {
             Home()
@@ -16,17 +19,27 @@ struct ContentView: View {
                     Text("Home")
                 }
             
-            Substitute()
+            SubstitutionView()
                 .tabItem {
                     Image(systemName: "person.3.fill")
                     Text("Vertretung")
                 }
             
-            ThomsLine()
+            ThomaeumNewsView()
+                .tabItem {
+                    Image(systemName: "graduationcap.fill")
+                    Text("Aktuelles")
+                }
+            
+            ThomsLineView()
                 .tabItem {
                     Image(systemName: "newspaper.fill")
                     Text("ThomsLine")
                 }
+        }
+        .onAppear {
+            thomsLineData.initialLoad()
+            thomaeumNewsData.initialLoad()
         }
     }
 }

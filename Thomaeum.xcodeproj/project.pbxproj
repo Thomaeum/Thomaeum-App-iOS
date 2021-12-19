@@ -8,40 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		5920BDA7273998FE00AA4AED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA6273998FE00AA4AED /* Home.swift */; };
-		5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA82739990600AA4AED /* ThomsLine.swift */; };
+		5920BDA92739990600AA4AED /* ThomsLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA82739990600AA4AED /* ThomsLineView.swift */; };
 		5920BDAB2739990C00AA4AED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAA2739990C00AA4AED /* Settings.swift */; };
-		5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* Substitute.swift */; };
-		593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593EC83E2760FAEC0040F8A6 /* CaTho.swift */; };
+		5920BDAD2739992E00AA4AED /* SubstitutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* SubstitutionView.swift */; };
+		596D680E276E4BF200A6AF3E /* Substitution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D680D276E4BF200A6AF3E /* Substitution.swift */; };
+		596D6810276E4C8000A6AF3E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D680F276E4C8000A6AF3E /* Course.swift */; };
+		596D6812276E4CC000A6AF3E /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D6811276E4CC000A6AF3E /* Teacher.swift */; };
+		596D6814276E4E6000A6AF3E /* SubstitutionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D6813276E4E6000A6AF3E /* SubstitutionData.swift */; };
+		5978F276276F6F7700871284 /* SmallCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5978F275276F6F7700871284 /* SmallCardView.swift */; };
 		59903B65276919A5003EB2EC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 59903B64276919A5003EB2EC /* SwiftSoup */; };
 		599771C02764BC9100C88E32 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771BF2764BC9100C88E32 /* ArticleService.swift */; };
-		599771C22766052F00C88E32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C12766052F00C88E32 /* Card.swift */; };
+		599771C22766052F00C88E32 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C12766052F00C88E32 /* CardView.swift */; };
 		599771C927667BF100C88E32 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599771C827667BF100C88E32 /* ArticleView.swift */; };
-		599A7A552767B7B4003223A1 /* External.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599A7A542767B7B4003223A1 /* External.swift */; };
 		59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */; };
 		59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31E192738687D00A9B7B4 /* ContentView.swift */; };
 		59C31E1C2738687D00A9B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1B2738687D00A9B7B4 /* Assets.xcassets */; };
 		59C31E1F2738687D00A9B7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C31E1E2738687D00A9B7B4 /* Preview Assets.xcassets */; };
 		59CF2A25273D9AA000CA40D4 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF2A24273D9AA000CA40D4 /* Article.swift */; };
-		59CF2A27273DA26400CA40D4 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF2A26273DA26400CA40D4 /* NewsData.swift */; };
+		59D45C6C276CF97500425BD2 /* ThomaeumNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D45C6B276CF97500425BD2 /* ThomaeumNewsView.swift */; };
+		59D45C6F276CFB7100425BD2 /* ThomsLineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D45C6E276CFB7100425BD2 /* ThomsLineData.swift */; };
+		59D45C71276CFB7B00425BD2 /* ThomaeumNewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D45C70276CFB7B00425BD2 /* ThomaeumNewsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5920BDA6273998FE00AA4AED /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		5920BDA82739990600AA4AED /* ThomsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLine.swift; sourceTree = "<group>"; };
+		5920BDA82739990600AA4AED /* ThomsLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLineView.swift; sourceTree = "<group>"; };
 		5920BDAA2739990C00AA4AED /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		5920BDAC2739992E00AA4AED /* Substitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substitute.swift; sourceTree = "<group>"; };
-		593EC83E2760FAEC0040F8A6 /* CaTho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTho.swift; sourceTree = "<group>"; };
+		5920BDAC2739992E00AA4AED /* SubstitutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstitutionView.swift; sourceTree = "<group>"; };
+		596D680D276E4BF200A6AF3E /* Substitution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substitution.swift; sourceTree = "<group>"; };
+		596D680F276E4C8000A6AF3E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		596D6811276E4CC000A6AF3E /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		596D6813276E4E6000A6AF3E /* SubstitutionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstitutionData.swift; sourceTree = "<group>"; };
+		5978F275276F6F7700871284 /* SmallCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardView.swift; sourceTree = "<group>"; };
 		599771BF2764BC9100C88E32 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
-		599771C12766052F00C88E32 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		599771C12766052F00C88E32 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		599771C827667BF100C88E32 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
-		599A7A542767B7B4003223A1 /* External.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = External.swift; sourceTree = "<group>"; };
 		59C31E142738687D00A9B7B4 /* Thomaeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thomaeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumApp.swift; sourceTree = "<group>"; };
 		59C31E192738687D00A9B7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59C31E1B2738687D00A9B7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59C31E1E2738687D00A9B7B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59CF2A24273D9AA000CA40D4 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		59CF2A26273DA26400CA40D4 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		59D45C6B276CF97500425BD2 /* ThomaeumNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumNewsView.swift; sourceTree = "<group>"; };
+		59D45C6E276CFB7100425BD2 /* ThomsLineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLineData.swift; sourceTree = "<group>"; };
+		59D45C70276CFB7B00425BD2 /* ThomaeumNewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomaeumNewsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,29 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		593EC83D2760F39D0040F8A6 /* CaTho */ = {
+		596D6809276E4AF100A6AF3E /* Substitution */ = {
 			isa = PBXGroup;
 			children = (
-				593EC83E2760FAEC0040F8A6 /* CaTho.swift */,
+				596D680D276E4BF200A6AF3E /* Substitution.swift */,
+				596D680F276E4C8000A6AF3E /* Course.swift */,
+				596D6811276E4CC000A6AF3E /* Teacher.swift */,
 			);
-			path = CaTho;
+			path = Substitution;
 			sourceTree = "<group>";
 		};
-		599771C527667BB700C88E32 /* Views */ = {
+		596D680A276E4AFC00A6AF3E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				599771C12766052F00C88E32 /* Card.swift */,
-				599771C827667BF100C88E32 /* ArticleView.swift */,
+				59D45C6E276CFB7100425BD2 /* ThomsLineData.swift */,
+				59D45C70276CFB7B00425BD2 /* ThomaeumNewsData.swift */,
+				596D6813276E4E6000A6AF3E /* SubstitutionData.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		599A7A532767B7A5003223A1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				599A7A542767B7B4003223A1 /* External.swift */,
-			);
-			path = Views;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		59C31E0B2738687D00A9B7B4 = {
@@ -102,6 +107,7 @@
 			children = (
 				59CF2A1E273D99FD00CA40D4 /* Views */,
 				59CF2A1F273D9A0300CA40D4 /* Models */,
+				596D680A276E4AFC00A6AF3E /* Data */,
 				59C31E1B2738687D00A9B7B4 /* Assets.xcassets */,
 				59C31E1D2738687D00A9B7B4 /* Preview Content */,
 			);
@@ -119,11 +125,9 @@
 		59CF2A1E273D99FD00CA40D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				599A7A532767B7A5003223A1 /* Views */,
-				593EC83D2760F39D0040F8A6 /* CaTho */,
-				59CF2A22273D9A2A00CA40D4 /* Substitute */,
-				59CF2A21273D9A2000CA40D4 /* news */,
 				59CF2A20273D9A1D00CA40D4 /* Home */,
+				59CF2A22273D9A2A00CA40D4 /* Substitution */,
+				59D45C6A276CF95100425BD2 /* News */,
 				59C31E172738687D00A9B7B4 /* ThomaeumApp.swift */,
 				59C31E192738687D00A9B7B4 /* ContentView.swift */,
 			);
@@ -133,8 +137,8 @@
 		59CF2A1F273D9A0300CA40D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				596D6809276E4AF100A6AF3E /* Substitution */,
 				59CF2A23273D9A9600CA40D4 /* Article */,
-				59CF2A26273DA26400CA40D4 /* NewsData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,21 +152,20 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		59CF2A21273D9A2000CA40D4 /* news */ = {
+		59CF2A21273D9A2000CA40D4 /* ThomsLine */ = {
 			isa = PBXGroup;
 			children = (
-				599771C527667BB700C88E32 /* Views */,
-				5920BDA82739990600AA4AED /* ThomsLine.swift */,
+				5920BDA82739990600AA4AED /* ThomsLineView.swift */,
 			);
-			path = news;
+			path = ThomsLine;
 			sourceTree = "<group>";
 		};
-		59CF2A22273D9A2A00CA40D4 /* Substitute */ = {
+		59CF2A22273D9A2A00CA40D4 /* Substitution */ = {
 			isa = PBXGroup;
 			children = (
-				5920BDAC2739992E00AA4AED /* Substitute.swift */,
+				5920BDAC2739992E00AA4AED /* SubstitutionView.swift */,
 			);
-			path = Substitute;
+			path = Substitution;
 			sourceTree = "<group>";
 		};
 		59CF2A23273D9A9600CA40D4 /* Article */ = {
@@ -172,6 +175,34 @@
 				599771BF2764BC9100C88E32 /* ArticleService.swift */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		59D45C6A276CF95100425BD2 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				59D45C6D276CFA7200425BD2 /* ThomaeumNews */,
+				59CF2A21273D9A2000CA40D4 /* ThomsLine */,
+				59D45C72276CFE1A00425BD2 /* general Views */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		59D45C6D276CFA7200425BD2 /* ThomaeumNews */ = {
+			isa = PBXGroup;
+			children = (
+				59D45C6B276CF97500425BD2 /* ThomaeumNewsView.swift */,
+			);
+			path = ThomaeumNews;
+			sourceTree = "<group>";
+		};
+		59D45C72276CFE1A00425BD2 /* general Views */ = {
+			isa = PBXGroup;
+			children = (
+				599771C12766052F00C88E32 /* CardView.swift */,
+				599771C827667BF100C88E32 /* ArticleView.swift */,
+				5978F275276F6F7700871284 /* SmallCardView.swift */,
+			);
+			path = "general Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,15 +284,20 @@
 				599771C02764BC9100C88E32 /* ArticleService.swift in Sources */,
 				59C31E1A2738687D00A9B7B4 /* ContentView.swift in Sources */,
 				59CF2A25273D9AA000CA40D4 /* Article.swift in Sources */,
-				5920BDAD2739992E00AA4AED /* Substitute.swift in Sources */,
-				599771C22766052F00C88E32 /* Card.swift in Sources */,
-				599A7A552767B7B4003223A1 /* External.swift in Sources */,
-				5920BDA92739990600AA4AED /* ThomsLine.swift in Sources */,
+				5920BDAD2739992E00AA4AED /* SubstitutionView.swift in Sources */,
+				596D6812276E4CC000A6AF3E /* Teacher.swift in Sources */,
+				599771C22766052F00C88E32 /* CardView.swift in Sources */,
+				5920BDA92739990600AA4AED /* ThomsLineView.swift in Sources */,
+				59D45C6F276CFB7100425BD2 /* ThomsLineData.swift in Sources */,
+				59D45C71276CFB7B00425BD2 /* ThomaeumNewsData.swift in Sources */,
 				5920BDA7273998FE00AA4AED /* Home.swift in Sources */,
-				59CF2A27273DA26400CA40D4 /* NewsData.swift in Sources */,
+				5978F276276F6F7700871284 /* SmallCardView.swift in Sources */,
 				59C31E182738687D00A9B7B4 /* ThomaeumApp.swift in Sources */,
+				596D680E276E4BF200A6AF3E /* Substitution.swift in Sources */,
 				5920BDAB2739990C00AA4AED /* Settings.swift in Sources */,
-				593EC83F2760FAEC0040F8A6 /* CaTho.swift in Sources */,
+				596D6814276E4E6000A6AF3E /* SubstitutionData.swift in Sources */,
+				596D6810276E4C8000A6AF3E /* Course.swift in Sources */,
+				59D45C6C276CF97500425BD2 /* ThomaeumNewsView.swift in Sources */,
 				599771C927667BF100C88E32 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

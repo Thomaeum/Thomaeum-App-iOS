@@ -1,22 +1,20 @@
 //
-//  ModelData.swift
+//  ThomaeumData.swift
 //  Thomaeum
 //
-//  Created by Simon Sure on 11.11.21.
+//  Created by Simon Sure on 17.12.21.
 //
 
 import Foundation
-import Combine
-import SwiftUI
 
-final class NewsData: ObservableObject {
+final class ThomaeumNewsData: ObservableObject {
     
     //variables
     @Published var articles: [Article]?
     private var articlesLoaded: Int = 0
     
     //constants
-    let baseUrl: String = "https://thoms-line.thomaeum.de/wp-json/wp/v2/"
+    let baseUrl: String = "https://thomaeum.de/wp-json/wp/v2/"
     let basicInformationQueryArguments: String = "_fields=id,date,link,title.rendered,excerpt.rendered,_links.wp:featuredmedia,_links.author&_embed&per_page=10"
     let allInformationQueryArguments: String = "_fields=id,date,link,title.rendered,content.rendered,excerpt.rendered&_embed"
     
@@ -27,8 +25,28 @@ final class NewsData: ObservableObject {
         
     }
     
-    func reloadArticles() {
+    func initialLoad() {
+        let urlString = baseUrl+"posts?"+basicInformationQueryArguments
         
+        guard let url = URL(string: urlString) else {return}
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data = data {
+                let decoder = JSONDecoder()
+                do {
+                    let articlesServices = try decoder.decode([ArticleService].self, from: data)
+                    let articles = articlesServices.map {
+                        Article(from: $0, outlet: "Thomaeum")
+                    }
+                    DispatchQueue.main.async {
+                        self.articlesLoaded = 10
+                        self.articles = articles
+                    }
+                } catch { print("error: \(error)") }
+            }
+        }
+        
+        task.resume()
     }
     
     func loadTenMoreArticles() {
@@ -42,11 +60,11 @@ final class NewsData: ObservableObject {
                 do {
                     let articlesServices = try decoder.decode([ArticleService].self, from: data)
                     let articles = articlesServices.map {
-                        Article(from: $0)
+                        Article(from: $0, outlet: "Thomaeum")
                     }
                     DispatchQueue.main.async {
                         self.articlesLoaded += 10
-                        self.articles = articles
+                        self.articles?.append(contentsOf: articles)
                     }
                 } catch { print("error: \(error)") }
             }
