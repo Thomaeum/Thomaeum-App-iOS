@@ -11,6 +11,7 @@
 		5920BDA92739990600AA4AED /* ThomsLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDA82739990600AA4AED /* ThomsLineView.swift */; };
 		5920BDAB2739990C00AA4AED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAA2739990C00AA4AED /* Settings.swift */; };
 		5920BDAD2739992E00AA4AED /* SubstitutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920BDAC2739992E00AA4AED /* SubstitutionView.swift */; };
+		594762F52770EBED003849E1 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594762F42770EBED003849E1 /* ListRow.swift */; };
 		596D680E276E4BF200A6AF3E /* Substitution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D680D276E4BF200A6AF3E /* Substitution.swift */; };
 		596D6810276E4C8000A6AF3E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D680F276E4C8000A6AF3E /* Course.swift */; };
 		596D6812276E4CC000A6AF3E /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D6811276E4CC000A6AF3E /* Teacher.swift */; };
@@ -35,6 +36,7 @@
 		5920BDA82739990600AA4AED /* ThomsLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsLineView.swift; sourceTree = "<group>"; };
 		5920BDAA2739990C00AA4AED /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5920BDAC2739992E00AA4AED /* SubstitutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstitutionView.swift; sourceTree = "<group>"; };
+		594762F42770EBED003849E1 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		596D680D276E4BF200A6AF3E /* Substitution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substitution.swift; sourceTree = "<group>"; };
 		596D680F276E4C8000A6AF3E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		596D6811276E4CC000A6AF3E /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				596D680D276E4BF200A6AF3E /* Substitution.swift */,
+				594762F42770EBED003849E1 /* ListRow.swift */,
 				596D680F276E4C8000A6AF3E /* Course.swift */,
 				596D6811276E4CC000A6AF3E /* Teacher.swift */,
 			);
@@ -296,6 +299,7 @@
 				596D680E276E4BF200A6AF3E /* Substitution.swift in Sources */,
 				5920BDAB2739990C00AA4AED /* Settings.swift in Sources */,
 				596D6814276E4E6000A6AF3E /* SubstitutionData.swift in Sources */,
+				594762F52770EBED003849E1 /* ListRow.swift in Sources */,
 				596D6810276E4C8000A6AF3E /* Course.swift in Sources */,
 				59D45C6C276CF97500425BD2 /* ThomaeumNewsView.swift in Sources */,
 				599771C927667BF100C88E32 /* ArticleView.swift in Sources */,

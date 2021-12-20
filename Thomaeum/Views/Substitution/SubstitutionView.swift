@@ -14,8 +14,16 @@ struct SubstitutionView: View {
     
     var body: some View {
         NavigationView {
-            List(substitutionData.substitutions, children: \.substituions) { substitution in
-                Text(substitution.type)
+            List(substitutionData.listrow, children: \.children) { row in
+                HStack {
+                    Text(row.left).background(Color.red)
+                    Spacer().background(Color.blue)
+                    if row.middle != nil { Text(row.middle!).background(Color.red) }
+                    Spacer().background(Color.green)
+                    if row.right != nil { Text(row.right!).background(Color.red) }
+                }
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .background(Color.gray)
             }
             .navigationTitle("Vertretung")
             .toolbar {
