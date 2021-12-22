@@ -27,7 +27,12 @@ struct Substitution: Identifiable {
     }
     
     func createListRow() -> ListRow {
-        let left: String = "\(start)-\(start+range-1)"
+        var left: String = ""
+        if range > 1 {
+            left = "\(start)-\(start+range-1)"
+        } else {
+            left = "\(start)"
+        }
         
         var middle: String
         middle = "\(regularCourse.subject)"
@@ -45,7 +50,12 @@ struct Substitution: Identifiable {
         }
         middle += " (\(regularCourse.teacher.short))"
         
-        let right: String = type
+        var right: String = ""
+        if type == "Raumvertretung" && changedCourseRoom != nil {
+            right = "Raum: \(changedCourseRoom!)"
+        } else {
+            right = type
+        }
         
         var children: [ListRow] = []
         if changedCourseRoom != nil {

@@ -16,14 +16,21 @@ struct SubstitutionView: View {
         NavigationView {
             List(substitutionData.listrow, children: \.children) { row in
                 HStack {
-                    Text(row.left).background(Color.red)
-                    Spacer().background(Color.blue)
-                    if row.middle != nil { Text(row.middle!).background(Color.red) }
+                    HStack {
+                        Text(row.left)
+                        Spacer()
+                    }
+                    .frame(minWidth: 40)
+                    if row.middle != nil {
+                        Text(row.middle!)//.background(Color.red)
+                    }
                     Spacer().background(Color.green)
-                    if row.right != nil { Text(row.right!).background(Color.red) }
+                    if row.right != nil {
+                        Text(row.right!)//.background(Color.red)
+                    }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
-                .background(Color.gray)
+                //.background(Color.gray)
             }
             .navigationTitle("Vertretung")
             .toolbar {
